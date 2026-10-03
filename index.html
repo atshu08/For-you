@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Shyam ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <main class="app">
+    <!-- LOGIN -->
+    <section id="loginPage" class="page active">
+      <div class="card login-card">
+        <div class="heart-logo">💗</div>
+        <p class="tiny-title">A tiny secret place made with love</p>
+        <h1>Who is <span>Atshu Ma's</span> boyfriend? 🥺</h1>
+        <p class="subtitle">Only one very special person is allowed inside...</p>
+
+        <div class="input-wrap">
+          <input id="nameInput" type="text" placeholder="Type his name..." autocomplete="off">
+          <button id="enterBtn">Enter My Heart 💕</button>
+        </div>
+
+        <p id="errorMessage" class="error-message"></p>
+        <p class="hint">Hint: It's the boy who has a very special place in her heart. 🤭</p>
+      </div>
+    </section>
+
+    <!-- WELCOME -->
+    <section id="welcomePage" class="page">
+      <div class="card welcome-card">
+        <div class="sparkle">✨</div>
+        <p class="tiny-title">ACCESS GRANTED 💌</p>
+        <h1>Welcome, <span>Shyam!</span> ❤️</h1>
+        <p class="big-message">You found your way into the little world<br>Atshu made just for you.</p>
+        <p class="subtitle">Because some people deserve their own little corner of the internet. 🫶</p>
+        <button id="startBtn" class="primary-btn">Come inside, Shyam 💗</button>
+      </div>
+    </section>
+
+    <!-- EMOTIONS -->
+    <section id="emotionPage" class="page">
+      <div class="wide-card">
+        <p class="tiny-title">A LITTLE CHECK-IN 💌</p>
+        <h1>Select how you feel today</h1>
+        <p class="subtitle">Whatever you're feeling, there is a little message waiting for you. ❤️</p>
+
+        <div id="emotionGrid" class="emotion-grid"></div>
+      </div>
+    </section>
+
+    <!-- DAYS -->
+    <section id="dayPage" class="page">
+      <div class="wide-card">
+        <button class="back-btn" id="backToEmotion">← Back</button>
+        <div id="selectedEmotion" class="selected-emotion"></div>
+        <h1>What day is it, my love? 🌷</h1>
+        <p class="subtitle">Pick your day and I'll find the perfect message for you.</p>
+        <div id="dayGrid" class="day-grid"></div>
+      </div>
+    </section>
+
+    <!-- MESSAGE -->
+    <section id="messagePage" class="page">
+      <div class="card message-card">
+        <button class="back-btn" id="backToDay">← Choose another day</button>
+        <div id="messageEmoji" class="message-emoji"></div>
+        <p id="messageLabel" class="tiny-title"></p>
+        <h1 id="messageTitle"></h1>
+        <div class="message-box">
+          <p id="loveMessage"></p>
+        </div>
+        <p id="signature" class="signature">— Love, Atsu Ma ❤️</p>
+        <button id="againBtn" class="primary-btn">I want another little message 💌</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
